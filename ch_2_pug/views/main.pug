@@ -1,0 +1,21 @@
+doctype html
+
+html(lang='en')
+  body
+    h1 Formulario de carga de productos
+    form(action='/api/productos', method='POST')
+        p
+          |    Product title: 
+          input(type='text', name='title', value='')
+          hr
+          |    Product price: 
+          input(type='number', name='price', value='')
+          hr
+          |Product thumbnail: 
+          input(type='text', name='thumbnail', value='')
+          hr
+        input(type='submit', value='Submit')
+    br
+    br
+    form(action='/api/productos/tabla', method='get')
+      input(type='submit', value='Ir a la tabla')

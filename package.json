@@ -1,0 +1,24 @@
+{
+  "name": "challenge5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-hbs": "node ./ch_1_hbs/src/index.js",
+    "start-pug": "node ./ch_2_pug/src/index.js",
+    "start-ejs": "node ./ch_3_ejs/src/index.js"
+  },
+  "author": "Alvaro Garcia",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}

@@ -1,0 +1,37 @@
+<html>
+  <head>
+    <title>Personas</title>
+  </head>
+  <body>
+    <h1>Listado de Productos</h1>
+    <hr/>
+    <% if (array.length) { %>
+      <table>
+        <thead>
+          <th>Id</th>
+          <th>Title</th>
+          <th>Price</th>
+          <th>Thumbnail</th>
+        </thead>
+        <tbody>
+          <% array.forEach((array) => { %>
+            <tr>
+              <td><%=array.id %></td>
+              <td><%=array.title %></td>
+              <td><%=array.price %></td>
+              <td><%=array.thumbnail %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    <% } else { %>
+      <p>No hay datos</p>
+    <% } %>
+
+
+    <br><br>
+    <form action="/api/productos/formulario"  method="get">
+    <input type="submit" value="Ir al formulario de carga de productos">
+     </form>
+  </body>
+</html>

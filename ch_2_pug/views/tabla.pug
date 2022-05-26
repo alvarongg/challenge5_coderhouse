@@ -1,0 +1,22 @@
+doctype html
+
+html(lang='en')
+  body
+    h1 Listado de Productos
+    table.table.table-striped
+      tr
+        th Id
+        th Title
+        th Price
+        th Thumbnail
+
+      each n in array
+        tr
+          td= n.id
+          td= n.title
+          td= n.price
+          td= n.thumbnail
+    br
+    br
+    form(action='/api/productos/formulario', method='get')
+      input(type='submit', value='Ir al formulario')
