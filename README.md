@@ -19,24 +19,40 @@
 
 ## Despliegue 📦
 
+> Cada proyecto esta configurado para ejecutarse en un puerto distinto lo que nos permite es tener corriendo los 3 a la vez 8080=hbs 8081=pug 8082=ejs
+
 * Instalacion de depedencias
 ```bash
 npm i 
 ```
-* Ejecucion del proyecto handlebars
+* Ejecucion del proyecto handlebars (se ejecuta en puerto 8080)
 ```bash
 npm run start-hbs
 ```
 
-* Ejecucion del proyecto pug
+* Ejecucion del proyecto pug (se ejecuta en puerto 8081)
 ```bash
 npm run start-pug
 ```
 
-* Ejecucion del proyecto ejs
+* Ejecucion del proyecto ejs (se ejecuta en puerto 8082)
 ```bash
 npm run start-ejs
 ```
+
+## Endpoits 
+
+* Handlebars
+[Formulario Handlebars](http://localhost8080/api/produtos/formulario)
+[Tabla Handlebars](http://localhost8080/api/produtos/tabla)
+
+* Pug
+[Formulario Pug](http://localhost8081/api/produtos/formulario)
+[Tabla Pug](http://localhost8081/api/produtos/tabla)
+
+* Ejs
+[Formulario Ejs](http://localhost8082/api/produtos/formulario)
+[Tabla Ejs](http://localhost8082/api/produtos/tabla)
 
 
 ## Construido con 🛠️
